@@ -1,7 +1,7 @@
 {
   "canisters": {
     "privateSurvey_backend": {
-      "main": "src/privateSurvey_backend/main.mo",
+      "main": "src/privateSurvey_backend/canistermain.mo",
       "type": "motoko"
     },
     "privateSurvey_frontend": {
