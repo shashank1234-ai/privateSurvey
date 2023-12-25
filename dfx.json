@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "privateSurvey_backend": {
+      "main": "src/privateSurvey_backend/main.mo",
+      "type": "motoko"
+    },
+    "privateSurvey_frontend": {
+      "dependencies": [
+        "privateSurvey_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/privateSurvey_frontend/src/index.html"
+      },
+      "source": [
+        "src/privateSurvey_frontend/assets",
+        "dist/privateSurvey_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
